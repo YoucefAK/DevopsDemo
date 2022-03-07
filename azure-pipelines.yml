@@ -23,5 +23,6 @@ steps:
 
 - task: CopyFiles@2
   inputs:
+    SourceFolder: '$(Agent.BuildDirectory)'
     Contents: '**/.war'
     TargetFolder: '$(build.artifactstagingdirectory)'
